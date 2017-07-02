@@ -1,0 +1,370 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Microsoft.Scs.Test.RiskTools.RulePerf.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataImporter_DatabaseNameMapping" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;ExternalData1_R	EXRKRKSQLSVR01\ExternalData1&lt;/string&gt;
+  &lt;string&gt;Lists_0_3	EXRKRKSQLSVR04\Lists_0_1&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DataImporter_DataDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.</Value>
+    </Setting>
+    <Setting Name="DataExporter_TableList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;ExternalData1_R.dbo.ReverseIPMap&lt;/string&gt;
+  &lt;string&gt;ExternalData1_R.dbo.BINList&lt;/string&gt;
+  &lt;string&gt;ExternalData1_R.dbo.namespace&lt;/string&gt;
+  &lt;string&gt;ExternalData1_R.dbo.AnonymousProxy&lt;/string&gt;
+  &lt;string&gt;ExternalData1_R.dbo.global_message&lt;/string&gt;
+  &lt;string&gt;ExternalData1_R.dbo.property&lt;/string&gt;
+  &lt;string&gt;ExternalData1_R.dbo.property_bag&lt;/string&gt;
+  &lt;string&gt;ExternalData1_R.dbo.property_key&lt;/string&gt;
+  &lt;string&gt;Lists_0_3.dbo.list_item_data&lt;/string&gt;
+  &lt;string&gt;Lists_0_3.dbo.factor_code&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DataExporter_ServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CO1MPRKSQLRPL02</Value>
+    </Setting>
+    <Setting Name="AzureWriteKeysAndValues_Disable" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;IsAzureDisabled	true&lt;/string&gt;
+  &lt;string&gt;EnableListAzureWrite	false&lt;/string&gt;
+  &lt;string&gt;AsyncOutputAction	true&lt;/string&gt;
+  &lt;string&gt;AsyncOutputHandler/AggregationOutputHandler	{"Parameters":[],"Weight":65536}&lt;/string&gt;
+  &lt;string&gt;AsyncOutputHandler/RiskEvaluationOutputHandler	{"Parameters":[],"Weight":65536}&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ReplayToolPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\ReplayTool</Value>
+    </Setting>
+    <Setting Name="ReplayToolCount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">40000</Value>
+    </Setting>
+    <Setting Name="ReplayToolTPS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="DatabasesToBeBackedup" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;EXRKRKSQLSVR01\ExternalData1&lt;/string&gt;
+  &lt;string&gt;EXRKRKSQLSVR02\RiMEConfig&lt;/string&gt;
+  &lt;string&gt;EXRKRKSQLSVR02\ExternalData2&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="SQLCommandTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="SQLConnectionTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="AzureWriteKeysAndValues_Enable" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;IsAzureDisabled	true&lt;/string&gt;
+  &lt;string&gt;EnableListAzureWrite	true&lt;/string&gt;
+  &lt;string&gt;AsyncOutputAction	true&lt;/string&gt;
+  &lt;string&gt;AsyncOutputHandler/AggregationOutputHandler	{"Parameters":[],"Weight":65536}&lt;/string&gt;
+  &lt;string&gt;AsyncOutputHandler/RiskEvaluationOutputHandler	{"Parameters":[],"Weight":65536}&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_IsZipped" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_TPS" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_DataFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\RulePerf\ReplayData.dat.gz</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_Count" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_NewGuid" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_NeedLog" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_Description" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"Rule Perf Testing"</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_JumpMinute" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="TransferFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\transfer\transfer\v-jetian</Value>
+    </Setting>
+    <Setting Name="BedTransferFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\bedtransfer\transfer\v-jetian</Value>
+    </Setting>
+    <Setting Name="SyncSettingsCommand" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\bedtransfer\transfer\ruleperf\RiskConfigAutoPropTool.exe -ImportMachine:EXRKRKUTLBEP01 -ImportPath:C:\RulePerf\RiMEConfig.xml</Value>
+    </Setting>
+    <Setting Name="ServerAssignmentFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\bedtransfer\transfer\v-jetian\EXRK.xml</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_RuleID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">All</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_NeedReport" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_TakoServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EXRKPSSQLTAK01</Value>
+    </Setting>
+    <Setting Name="CopyDataFiles_From" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\transfer\transfer\v-jetian</Value>
+    </Setting>
+    <Setting Name="CopyDataFiles_To" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\bedtransfer\transfer\v-jetian</Value>
+    </Setting>
+    <Setting Name="CopyDataFiles_DeleteSource" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="GlobalSettings" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;IsAzureDisabled	true&lt;/string&gt;
+  &lt;string&gt;EnableListAzureWrite	true&lt;/string&gt;
+  &lt;string&gt;AsyncOutputAction	true&lt;/string&gt;
+  &lt;string&gt;AsyncOutputHandler/AggregationOutputHandler	{"Parameters":[],"Weight":65536}&lt;/string&gt;
+  &lt;string&gt;AsyncOutputHandler/RiskEvaluationOutputHandler	{"Parameters":[],"Weight":65536}&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DataImporter_BCP_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">bcp.exe</Value>
+    </Setting>
+    <Setting Name="ChangeGroupXmlFiles" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="Environment" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Bed</Value>
+    </Setting>
+    <Setting Name="ScriptsPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\bedtransfer\transfer\v-jetian\TestScripts.txt</Value>
+    </Setting>
+    <Setting Name="ChangeGroupMergeHistoryFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\transfer\transfer\RulePerf\MergedChangeGroupHistory.xml</Value>
+    </Setting>
+    <Setting Name="DomainUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">v-jetian</Value>
+    </Setting>
+    <Setting Name="DomainPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Domain" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FAREAST</Value>
+    </Setting>
+    <Setting Name="RestartMachineList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;EXRKPGSQLAPP02&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="RestartMachineTimeoutTimeSpan" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2:00:00</Value>
+    </Setting>
+    <Setting Name="RestartMachinePollInterval" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0:02:00</Value>
+    </Setting>
+    <Setting Name="BackedUpDatabasesWhenApplyingChanges" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DeployTargetPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RemoteMachine" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RemoteCommand" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RemoteUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Administrator</Value>
+    </Setting>
+    <Setting Name="RemotePassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#Bugsfor$</Value>
+    </Setting>
+    <Setting Name="RemoteDomain" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.</Value>
+    </Setting>
+    <Setting Name="TestSetting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Jeff</Value>
+    </Setting>
+    <Setting Name="InitialStepFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ResultLogPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RemoteTimeout" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00:10:00</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_TPS_BaseLine" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#tps#</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_TPS_ChangedRun" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#tps#</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_Count_Run" Type="System.String" Scope="User">
+      <Value Profile="(Default)">50000</Value>
+    </Setting>
+    <Setting Name="EmailToList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;v-jetian@microsoft.com&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="EmailCCList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;v-jetian@microsoft.com&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="EmailUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EmailPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RuleIds" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;1705&lt;/string&gt;
+  &lt;string&gt;1706&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DownloadResponseTimeoutMilliseconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5000</Value>
+    </Setting>
+    <Setting Name="RCMInputToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-----------------------------7dc1092810278
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+mi5qZ5l8M16EB6ZARIibqIycc9N/K4T65cRehGGCe42waCS5hE+Y55DsIezDzwoTz8qIJ9Qrv8JytcEMC3sMfpkozpPb9qhcMqxwa9R5PQWevx4ea9UIl57B4HFvij+PAeTCSyjjM/UpfdlVgIYxMAPvF73pcOu6pU8AXQc1lH0SZ5T388Zy1xaUhOd/Rnl4
+-----------------------------7dc1092810278
+Content-Disposition: form-data; name="ChangeGroup.GroupId"
+
+6e7c0c28-2c43-431f-8681-dd9e386d1aa0
+-----------------------------7dc1092810278
+Content-Disposition: form-data; name="ChangeGroup.Description"
+
+bug#54037[Risk][Rule Change] Type 2 change group: Add Async Low Risk check For Partner spsp_xbox and cm_windows
+-----------------------------7dc28b1d616dc
+Content-Disposition: form-data; name="ChangeGroup.Comments"
+
+[Risk][Rule Change] Type 2 change group: Add Async Low Risk check For Partner spsp_xbox and cm_windows
+-----------------------------7dc1092810278
+Content-Disposition: form-data; name="importedXmlFileInput"; filename=""
+Content-Type: application/octet-stream
+
+
+-----------------------------7dc1092810278
+Content-Disposition: form-data; name="submitButton"
+
+Export change group xml
+-----------------------------7dc1092810278--</Value>
+    </Setting>
+    <Setting Name="ChangeGroupLinks" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;http://ctpcmco1/RCM/ChangeGroup/Save?groupId=65b3be47-b9cf-4f39-8083-22dfeb5002cc&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="RuleSourceFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\transfer\transfer\RulePerf\RuleSrcFiles</Value>
+    </Setting>
+    <Setting Name="RuleDestFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\bedtransfer\transfer\v-jetian</Value>
+    </Setting>
+    <Setting Name="DownloadRiMEConfigCommand" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\bedtransfer\transfer\ruleperf\RiskConfigAutoPropTool.exe -ExportMachine:CTPCMCO1 -ExportPath:\\bedtransfer\transfer\v-jetian\RiMEConfig.xml</Value>
+    </Setting>
+    <Setting Name="DownloadRiMEConfigReferencedList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;\\bedtransfer\transfer\RulePerf\RiskConfigImportExport.dll&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DeployReferencedList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;RiskEmailSender.dll&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ApplyChangeGroupCommand" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\bedtransfer\transfer\ruleperf\RiskConfigAutoPropTool.exe -ImportMachine:EXRKRKUTLBEP01 -ImportPath:C:\RulePerf\{0} -UseNewGroupID:True</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_ImpersonateUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Administrator</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_ImpersonateDomain" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EXRK</Value>
+    </Setting>
+    <Setting Name="RiskAPICaller_ImpersonatePassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#Bugsfor$</Value>
+    </Setting>
+    <Setting Name="Commands" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;iisreset&lt;/string&gt;
+  &lt;string&gt;cmd /c echo Hello&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ServicesToRestart" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ReportServer,SQLSERVERAGENT,MSSQLSERVER</Value>
+    </Setting>
+    <Setting Name="RestartServicesTargetMachine" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RestartServicesUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RestartServicesDomain" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RestartServicesPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CommandsUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Administrator</Value>
+    </Setting>
+    <Setting Name="CommandsPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#Bugsfor$</Value>
+    </Setting>
+    <Setting Name="CommandsDomain" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EXRK</Value>
+    </Setting>
+    <Setting Name="DeployUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DeployPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DeployDomain" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TransactionCountPerRule" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="ChangeGroupDownloadTo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\bedtransfer\transfer\v-jetian\</Value>
+    </Setting>
+    <Setting Name="ChangeGroupDownloadingReferencedList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;\\bedtransfer\transfer\RulePerf\Common.dll&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DataImporter_IsContinueRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

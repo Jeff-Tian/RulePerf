@@ -1,0 +1,93 @@
+﻿!INCLUDE $(INETROOT)\build\paths.all
+!INCLUDE $(INETROOT)\build\sources.all
+
+MANAGED_CODE             =	1
+
+TARGETNAME               =	RulePerf
+TARGETTYPE               =	PROGRAM
+UMTYPE					 =	console
+
+REFERENCES               =	System.Data.dll; \
+							System.Management.dll; \
+							System.Drawing.dll; \
+							System.Windows.Forms.dll; \
+							System.Xml.dll; \
+							System.Xml.Linq.dll; \
+							$(TARGETPATH)\$(BUILDTARGET)\RiskInternalEmailSender.dll; \
+
+SOURCES                  =	ObjectEditor.cs \
+							ObjectEditor.Designer.cs \
+							Program.cs \
+							RulePerfArgumentParser.cs \
+							RulePerfConsoleArgument.cs \
+							RulePerfForm.cs \
+							RulePerfForm.Designer.cs \
+							StepDetailViewer.cs \
+							StepDetailViewer.Designer.cs \
+							StepSettingsForm.cs \
+							StepSettingsForm.Designer.cs \
+							BLL\AllowedInstancesConfigBLL.cs \
+							BLL\BackupDatabaseBLL.cs \
+							BLL\ChangeGroupBLL.cs \
+							BLL\DataExporter.cs \
+							BLL\DataImporter.cs \
+							BLL\RiMEConfigBLL.cs \
+							BLL\ServiceLocatorBLL.cs \
+							BLL\StepsProcessor.cs \
+							BLL\ThirdPartyProgramBLL.cs \
+							BLL\WMIHelper.cs \
+							DAL\RiMEConfigDAL.cs \
+							DAL\SqlServerHelper.cs \
+							DataStructure\Package.cs \
+							Event\RiskPerfStatusEvent.cs \
+							Event\RiskPerfStatusEventPublisher.cs \
+							Event\RiskPerfStatusEventSubscriber.cs \
+							Helper\CmdHelper.cs \
+							Helper\ExceptionHelper.cs \
+							Helper\Extensions.cs \
+							Helper\FileHelper.cs \
+							Helper\LogHelper.cs \
+							Helper\RemoteHelper.cs \
+							Helper\ThreadHelper.cs \
+							Helper\WMICmdHelper.cs \
+							Helper\ZipHelper.cs \
+							Model\ApplyChangeGroupStep.cs \
+							Model\BackupDatabasesStep.cs \
+							Model\CommonStep.cs \
+							Model\ConfigChangeModel.cs \
+							Model\CopyDataFilesStep.cs \
+							Model\DeploySelfStep.cs \
+							Model\DeployTargetModel.cs \
+							Model\DownloadChangeGroupStep.cs \
+							Model\ExportDataFromSqlServerStep.cs \
+							Model\ImportProductionDataStep.cs \
+							Model\MergeDataFilesStep.cs \
+							Model\OneBoxServerAssignmentModel.cs \
+							Model\PrepareTransactionDataFileStep.cs \
+							Model\RemoteExeStep.cs \
+							Model\RestartMachinesStep.cs \
+							Model\RollbackChangeGroupStep.cs \
+							Model\RunReplayToolForAggDataPreparationStep.cs \
+							Model\RunReplayToolForBaseLineStep.cs \
+							Model\RunReplayToolForChangedStep.cs \
+							Model\RunReplayToolForTPSTestingStep.cs \
+							Model\ServerAssignmentModel.cs \
+							Model\ServiceLocatorModel.cs \
+							Model\SettingModel.cs \
+							Model\SetupGlobalSettingStep.cs \
+							Model\Step.cs \
+							Model\StepProcessorStep.cs \
+							Model\SyncProductSettingsStep.cs \
+							Model\TestStep.cs \
+							UserControl\ExcelDataGridView.cs \
+							Properties\Resources.Designer.cs \
+							Properties\Settings.Designer.cs \
+							$(INETROOT)\private\platform\CPUtility\ArgumentParser.cs \
+
+BINPLACE_NO_SYMCHK       =	1
+BINPLACE_FLAGS           =	$(BINPLACE_FLAGS) --no-postbuild-cover
+
+PASS1_BINPLACE           =	-:DEST drop\%BUILDTYPE%\RiskManagement\RulePerf $(TARGETPATH)\$(BUILDTARGET)\RulePerf.exe \
+							-:DEST drop\%BUILDTYPE%\RiskManagement\RulePerf Lib\RiskRuleAutoPropTool.exe
+
+ASSEMBLY_IDENTITY_PUBLIC_KEY_NAME = none

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFE373D5-A048-4219-9EDF-F23CA2407158}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Scs.Test.RiskTools.RulePerf</RootNamespace>
+    <AssemblyName>RulePerf</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArgumentParser.cs" />
+    <Compile Include="BLL\AllowedInstancesConfigBLL.cs" />
+    <Compile Include="BLL\BackupDatabaseBLL.cs" />
+    <Compile Include="BLL\ChangeGroupBLL.cs" />
+    <Compile Include="BLL\DataExporter.cs" />
+    <Compile Include="BLL\DataImporter.cs" />
+    <Compile Include="BLL\ThirdPartyProgramBLL.cs" />
+    <Compile Include="BLL\RiMEConfigBLL.cs" />
+    <Compile Include="BLL\StepsProcessor.cs" />
+    <Compile Include="BLL\ServiceLocatorBLL.cs" />
+    <Compile Include="DAL\RiMEConfigDAL.cs" />
+    <Compile Include="DAL\SqlServerHelper.cs" />
+    <Compile Include="DataStructure\Package.cs" />
+    <Compile Include="Event\RiskPerfStatusEvent.cs" />
+    <Compile Include="Event\RiskPerfStatusEventPublisher.cs" />
+    <Compile Include="Event\RiskPerfStatusEventSubscriber.cs" />
+    <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Model\CommandsExecutingStep.cs" />
+    <Compile Include="Model\RestartServiceStep.cs" />
+    <Compile Include="Model\DownloadRiMEConfigStep.cs" />
+    <Compile Include="Model\MergeDataFilesStep.cs" />
+    <Compile Include="Model\DownloadChangeGroupStep.cs" />
+    <Compile Include="Model\PrepareTransactionDataFileStep.cs" />
+    <Compile Include="ObjectEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectEditor.Designer.cs">
+      <DependentUpon>ObjectEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\CmdHelper.cs" />
+    <Compile Include="Helper\ExceptionHelper.cs" />
+    <Compile Include="Helper\Extensions.cs" />
+    <Compile Include="Helper\LogHelper.cs" />
+    <Compile Include="Helper\RemoteHelper.cs" />
+    <Compile Include="Helper\ThreadHelper.cs" />
+    <Compile Include="Helper\WMICmdHelper.cs" />
+    <Compile Include="Helper\ZipHelper.cs" />
+    <Compile Include="Model\ApplyChangeGroupStep.cs" />
+    <Compile Include="Model\BackupDatabasesStep.cs" />
+    <Compile Include="Model\CommonStep.cs" />
+    <Compile Include="Model\ConfigChangeModel.cs" />
+    <Compile Include="Model\StepProcessorStep.cs" />
+    <Compile Include="Model\RemoteExeStep.cs" />
+    <Compile Include="Model\DeploySelfStep.cs" />
+    <Compile Include="Model\DeployTargetModel.cs" />
+    <Compile Include="Model\RestartMachinesStep.cs" />
+    <Compile Include="Model\RollbackChangeGroupStep.cs" />
+    <Compile Include="Model\CopyDataFilesStep.cs" />
+    <Compile Include="Model\ExportDataFromSqlServerStep.cs" />
+    <Compile Include="Model\ImportProductionDataStep.cs" />
+    <Compile Include="Model\OneBoxServerAssignmentModel.cs" />
+    <Compile Include="Model\RunReplayToolForAggDataPreparationStep.cs" />
+    <Compile Include="Model\RunReplayToolForBaseLineStep.cs" />
+    <Compile Include="Model\RunReplayToolForChangedStep.cs" />
+    <Compile Include="Model\ServerAssignmentModel.cs" />
+    <Compile Include="Model\ServiceLocatorModel.cs" />
+    <Compile Include="Model\SettingModel.cs" />
+    <Compile Include="Model\Step.cs" />
+    <Compile Include="Model\SetupGlobalSettingStep.cs" />
+    <Compile Include="Model\SyncProductSettingsStep.cs" />
+    <Compile Include="Model\TestStep.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="RulePerfArgumentParser.cs" />
+    <Compile Include="RulePerfConsoleArgument.cs" />
+    <Compile Include="RulePerfForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulePerfForm.Designer.cs">
+      <DependentUpon>RulePerfForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StepDetailViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StepDetailViewer.Designer.cs">
+      <DependentUpon>StepDetailViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ExcelDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StepSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StepSettingsForm.Designer.cs">
+      <DependentUpon>StepSettingsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ObjectEditor.resx">
+      <DependentUpon>ObjectEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RulePerfForm.resx">
+      <DependentUpon>RulePerfForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StepDetailViewer.resx">
+      <DependentUpon>StepDetailViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StepSettingsForm.resx">
+      <DependentUpon>StepSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\RulePerf.Model.SettingEntityModel.datasource" />
+    <None Include="Properties\DataSources\RulePerf.Model.Step.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\RiskRuleAutoPropTool.exe" />
+    <None Include="sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RiskInternalEmailSender\RiskInternalEmailSender\RiskInternalEmailSender.csproj">
+      <Project>{18421337-F628-4391-97DB-A3D338CDBEDB}</Project>
+      <Name>RiskInternalEmailSender</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

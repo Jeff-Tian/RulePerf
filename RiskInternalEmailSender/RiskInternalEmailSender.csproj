@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(EnvironmentConfig)" />
+  <PropertyGroup>
+    <ProjectGuid>{7E9EDBE8-A9D0-4663-A451-C00FF88EC657}</ProjectGuid>
+    <AssemblyName>RiskInternalEmailSender</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AssemblyClsCompliant>false</AssemblyClsCompliant>
+    <TargetName>RiskInternalEmailSender</TargetName>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <OutDir>$(OutputRoot)\target\$(BuildType)\$(BuildArchitecture)\</OutDir>
+    <IntermediateOutputPath>$(ObjectDirectory)\$(BuildArchitecture)</IntermediateOutputPath>
+    <PlatformTarget>$(_BuildArch)</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <NoWarn>618</NoWarn>
+    <DefineConstants>TRACE;DISABLE_COREXT_ASSEMBLY_IDENTITY</DefineConstants>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>System.Xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RiskEmailSenderUtility.cs" />
+    <Compile Include="RiskInternalEmailSender.cs" />
+  </ItemGroup>
+  <Import Project="$(ExtendedTargetsPath)\Microsoft.CSharp.targets" />
+</Project>
